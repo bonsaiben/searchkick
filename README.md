@@ -710,4 +710,4 @@ Searchkick uses `ENV["ELASTICSEARCH_URL"]` for the Elasticsearch server.  This d
 
 ### Heroku
 
-Choose an add-on: [SearchBox](https://addons.heroku.com/searchbox), [Bonsai](https://addons.heroku.com/bonsai), or [Found](https://addons.heroku.com/foundelas
+Choose an add-on: [SearchBox](https://addons.heroku.com/searchbox), [Bonsai](https://addons.heroku.com/bonsai), or [Found](https://addons.heroku.com/foundela)
