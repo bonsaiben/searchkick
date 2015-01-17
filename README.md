@@ -746,22 +746,4 @@ Then deploy and reindex:
 rake searchkick:reindex CLASS=Product
 ```
 
-### Performance
-
-For the best performance, add [Typhoeus](https://github.com/typhoeus/typhoeus) to your Gemfile.
-
-```ruby
-gem 'typhoeus'
-```
-
-And create an initializer with:
-
-```ruby
-require "typhoeus/adapters/faraday"
-Ethon.logger = Logger.new("/dev/null")
-```
-
-**Note:** Typhoeus is not available for Windows.
-
-
 
