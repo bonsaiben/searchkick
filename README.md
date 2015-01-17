@@ -985,31 +985,4 @@ rake searchkick:reindex:all
 
 4. Once it finishes, replace search calls w/ searchkick calls
 
-## Upgrading
-
-View the [changelog](https://github.com/ankane/searchkick/blob/master/CHANGELOG.md).
-
-Important notes are listed below.
-
-### 0.6.0 and 0.7.0
-
-If running Searchkick `0.6.0` or `0.7.0` and Elasticsearch `0.90`, we recommend upgrading to Searchkick `0.6.1` or `0.7.1` to fix an issue that causes downtime when reindexing.
-
-### 0.3.0
-
-Before `0.3.0`, locations were indexed incorrectly. When upgrading, be sure to reindex immediately.
-
-## Elasticsearch Gotchas
-
-### Inconsistent Scores
-
-Due to the distributed nature of Elasticsearch, you can get incorrect results when the number of documents in the index is low.  You can [read more about it here](http://www.elasticsearch.org/blog/understanding-query-then-fetch-vs-dfs-query-then-fetch/).  To fix this, do:
-
-```ruby
-class Product < ActiveRecord::Base
-  searchkick settings: {number_of_shards: 1}
-end
-```
-
-For convenience, this is set by default in the test environment.
 
