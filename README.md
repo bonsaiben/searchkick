@@ -712,25 +712,5 @@ Searchkick uses `ENV["ELASTICSEARCH_URL"]` for the Elasticsearch server.  This d
 
 Choose an add-on: [SearchBox](https://addons.heroku.com/searchbox), [Bonsai](https://addons.heroku.com/bonsai), or [Found](https://addons.heroku.com/foundelasticsearch).
 
-```sh
-# SearchBox
-heroku addons:add searchbox:starter
-heroku config:add ELASTICSEARCH_URL=`heroku config:get SEARCHBOX_URL`
-
-# Bonsai
-heroku addons:add bonsai
-heroku config:add ELASTICSEARCH_URL=`heroku config:get BONSAI_URL`
-
-# Found
-heroku addons:add foundelasticsearch
-heroku config:add ELASTICSEARCH_URL=`heroku config:get FOUNDELASTICSEARCH_URL`
-```
-
-Then deploy and reindex:
-
-```sh
-heroku run rake searchkick:reindex CLASS=Product
-```
-
 
 
