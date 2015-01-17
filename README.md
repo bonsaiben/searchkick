@@ -763,15 +763,5 @@ Ethon.logger = Logger.new("/dev/null")
 
 **Note:** Typhoeus is not available for Windows.
 
-### Automatic Failover
-
-Create an initializer `config/initializers/elasticsearch.rb` with multiple hosts:
-
-```ruby
-Searchkick.client = Elasticsearch::Client.new(hosts: ["localhost:9200", "localhost:9201"], retry_on_failure: true)
-```
-
-See [elasticsearch-transport](https://github.com/elasticsearch/elasticsearch-ruby/blob/master/elasticsearch-transport) for a complete list of options.
-
 
 
