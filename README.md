@@ -732,18 +732,5 @@ Then deploy and reindex:
 heroku run rake searchkick:reindex CLASS=Product
 ```
 
-### Other
-
-Create an initializer `config/initializers/elasticsearch.rb` with:
-
-```ruby
-ENV["ELASTICSEARCH_URL"] = "http://username:password@api.searchbox.io"
-```
-
-Then deploy and reindex:
-
-```sh
-rake searchkick:reindex CLASS=Product
-```
 
 
