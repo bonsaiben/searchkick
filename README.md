@@ -1026,20 +1026,4 @@ Thanks to Karel Minarik for [Elasticsearch Ruby](https://github.com/elasticsearc
 - Add section on testing
 - Much finer customization
 
-## Contributing
 
-Everyone is encouraged to help improve this project. Here are a few ways you can help:
-
-- [Report bugs](https://github.com/ankane/searchkick/issues)
-- Fix bugs and [submit pull requests](https://github.com/ankane/searchkick/pulls)
-- Write, clarify, or fix documentation
-- Suggest or add new features
-
-To get started with development and testing:
-
-```sh
-git clone https://github.com/ankane/searchkick.git
-cd searchkick
-bundle install
-rake test
-```
