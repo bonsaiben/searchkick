@@ -692,7 +692,7 @@ Product.searchkick_index.tokens("dishwasher soap", analyzer: "searchkick_search2
 # ["dishwash", "soap"] - match!!
 ```
 
-Partial matches
+Partial matche
 
 ```ruby
 Product.searchkick_index.tokens("San Diego", analyzer: "searchkick_word_start_index")
@@ -710,7 +710,4 @@ Searchkick uses `ENV["ELASTICSEARCH_URL"]` for the Elasticsearch server.  This d
 
 ### Heroku
 
-Choose an add-on: [SearchBox](https://addons.heroku.com/searchbox), [Bonsai](https://addons.heroku.com/bonsai), or [Found](https://addons.heroku.com/foundelasticsearch).
-
-
-
+Choose an add-on: [SearchBox](https://addons.heroku.com/searchbox), [Bonsai](https://addons.heroku.com/bonsai), or [Found](https://addons.heroku.com/foundelasz
